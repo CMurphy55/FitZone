@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ie.wit.R
 import ie.wit.models.TransferModel
 import kotlinx.android.synthetic.main.card_donation.view.*
-
+//transferAdapter File
 class TransferAdapter constructor(var donations: ArrayList<TransferModel>)
     : RecyclerView.Adapter<TransferAdapter.MainHolder>() {
 
