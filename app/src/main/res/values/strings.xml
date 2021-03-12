@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Transfer</string>
+    <string name="action_donate">Transfer</string>
+    <string name="action_report">Report</string>
+    <string name="donateTitle">Welcome</string>
+    <string name="donateSubtitle">Transfer Money</string>
+    <string name="donateButton">Transfer</string>
+    <string name="paypal">Bank Account</string>
+    <string name="direct">Savings Account</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total so Far</string>
+    <string name="totalSoFar">$ Total</string>
+    <string name="reportTitle">Transfer Report</string>
+    <string name="defaultAmount">00</string>
+    <string name="defaultMethod">N/A</string>
+    <string name="enter_amount">Enter Amount</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open Menu</string>
+    <string name="navigation_drawer_close">Close Menu</string>
+    <string name="nav_header_title">Transfer</string>
+    <string name="nav_header_subtitle">contact@transferhub.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_donate">Transfer</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_favourites">Recent Transfers</string>
+    <string name="menu_about">About Us</string>
+
+
+    <string name="aboutus_title">TransferHub</string>
+    <string name="aboutus_message">TransferHub is a quick and easy way to transfer money. Wherever you are! With a transfer time of under five seconds per transfer, transferHub is the fastest transfer app on the market.
+    our customer service are here to assist you 24/7.</string>
+
+    <string name="messageLoading">Please wait while we Connect to the Server...</string>
+</resources>
