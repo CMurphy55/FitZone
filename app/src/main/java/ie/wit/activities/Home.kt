@@ -1,9 +1,12 @@
 package ie.wit.activities
 
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
@@ -19,9 +22,15 @@ import kotlinx.android.synthetic.main.fragment_donate.*
 import kotlinx.android.synthetic.main.home.*
 import org.jetbrains.anko.progressDialog
 import org.jetbrains.anko.toast
+import java.text.SimpleDateFormat
+import java.util.*
+
 
 class Home : AppCompatActivity(),
     NavigationView.OnNavigationItemSelectedListener {
+
+    var formate = SimpleDateFormat("dd MMM, YYYY",Locale.US)
+    var timeFormat = SimpleDateFormat("hh:mm a", Locale.US)
 
     lateinit var ft: FragmentTransaction
 
@@ -29,6 +38,9 @@ class Home : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home)
         setSupportActionBar(toolbar)
+
+
+
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action",
@@ -48,6 +60,8 @@ class Home : AppCompatActivity(),
         ft.replace(R.id.homeFrame, fragment)
         ft.commit()
     }
+
+
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 

@@ -50,7 +50,7 @@ class TransferFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
 
         root.amountPicker.setOnValueChangedListener { _, _, newVal ->
             //Display the newly selected number to paymentAmount
-            root.paymentAmount.setText("$newVal")
+            root.calorieAmount.setText("$newVal")
         }
         setButtonListener(root)
         return root;
@@ -66,8 +66,8 @@ class TransferFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
 
     fun setButtonListener( layout: View) {
         layout.donateButton.setOnClickListener {
-            val amount = if (layout.paymentAmount.text.isNotEmpty())
-                layout.paymentAmount.text.toString().toInt() else layout.amountPicker.value
+            val amount = if (layout.calorieAmount.text.isNotEmpty())
+                layout.calorieAmount.text.toString().toInt() else layout.amountPicker.value
             if(totalDonated >= layout.progressBar.max)
                 activity?.toast("Donate Amount Exceeded!")
             else {

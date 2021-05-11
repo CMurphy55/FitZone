@@ -2,18 +2,20 @@
     <string name="app_name">Transfer</string>
     <string name="action_donate">Transfer</string>
     <string name="action_report">Report</string>
-    <string name="donateTitle">Welcome</string>
-    <string name="donateSubtitle">Transfer Money</string>
-    <string name="donateButton">Transfer</string>
+    <string name="donateTitle">FitZone</string>
+    <string name="SubHeading">Add Favourite Meal</string>
+    <string name="SubmitButton">Enter</string>
     <string name="paypal">Bank Account</string>
     <string name="direct">Savings Account</string>
-    <string name="amount">Amount</string>
+    <string name="amount">Calories</string>
+    <string name="name">Please Enter Food/Drink Name</string>
+    <string name="date">Show Dialog</string>
     <string name="total">Total so Far</string>
-    <string name="totalSoFar">$ Total</string>
+    <string name="totalSoFar"></string>
     <string name="reportTitle">Transfer Report</string>
     <string name="defaultAmount">00</string>
     <string name="defaultMethod">N/A</string>
-    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_amount">Enter Calories</string>
 
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open Menu</string>
