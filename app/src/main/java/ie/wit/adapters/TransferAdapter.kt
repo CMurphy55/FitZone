@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import ie.wit.R
 import ie.wit.models.TransferModel
 import kotlinx.android.synthetic.main.card_donation.view.*
+import kotlinx.android.synthetic.main.card_donation.view.calorieAmount
+import kotlinx.android.synthetic.main.fragment_home.view.*
+
 //transferAdapter File
 class TransferAdapter constructor(var donations: ArrayList<TransferModel>)
     : RecyclerView.Adapter<TransferAdapter.MainHolder>() {
@@ -35,10 +38,10 @@ class TransferAdapter constructor(var donations: ArrayList<TransferModel>)
 
     class MainHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bind(donation: TransferModel) {
-            itemView.tag = donation._id
-            itemView.paymentamount.text = donation.amount.toString()
-            itemView.paymentmethod.text = donation.paymenttype
+        fun bind(meal: TransferModel) {
+            itemView.tag = meal._id
+            itemView.calorieAmount.text = meal.calories
+            itemView.description.text = meal.description
             itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_round)
         }
     }

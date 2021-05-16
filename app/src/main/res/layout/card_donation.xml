@@ -28,19 +28,18 @@
             android:id="@+id/calorieAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginStart="39dp"
-            android:paddingTop="18dp"
             android:layout_toEndOf="@+id/imageIcon"
             android:fontFamily="@font/staatlitches"
             android:gravity="center_vertical"
+            android:paddingTop="18dp"
             android:text="TextView"
             android:textColor="@color/colorButton"
             android:textSize="16sp"
             tools:text="436kcal" />
 
         <TextView
-            android:id="@+id/AddDescription"
+            android:id="@+id/description"
             android:layout_width="89dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -52,6 +51,23 @@
             android:textAlignment="viewStart"
             android:textColor="@color/colorButton"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/calorieAmount"
+            android:fontFamily="@font/staatlitches"
+            android:text="@string/desc"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorButton"
+            android:textSize="16sp" />
+
+
+
 
 
     </RelativeLayout>

@@ -104,7 +104,7 @@ class ReportFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
     }
 
     fun getAllMeals() {
-        showLoader(loader, "Downloading the Meals List")
+        showLoader(loader, "Loading")
         var callGetAll = app.donationService.getall()
         callGetAll.enqueue(this)
     }

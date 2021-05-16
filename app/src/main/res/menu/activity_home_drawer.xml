@@ -15,7 +15,7 @@
         <item
             android:id="@+id/nav_favourites"
             android:icon="@mipmap/nav_foreground"
-            android:title="@string/menu_favourites" />
+            android:title="@string/menu_thirdoption" />
         <item
             android:id="@+id/nav_aboutus"
             android:icon="@mipmap/page"

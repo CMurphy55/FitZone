@@ -5,10 +5,11 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class TransferModel(var _id: String = "N/A",
-                         val paymenttype: String = "N/A",
-                         val amount: Int = 0,
+                         var calories: String = "N/A",
+                         var amount: Int = 0,
+                         var image: String = "",
                          var name: String = "",
-                         val description: String = "",
-                         val message: String = "a message") : Parcelable
+                         var description: String = "N/A",
+                         var message: String = "a message") : Parcelable
 
 

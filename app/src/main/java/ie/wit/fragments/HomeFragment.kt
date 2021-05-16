@@ -22,10 +22,11 @@ import javax.security.auth.callback.Callback
 
 
 
-class HomeFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
+class HomeFragment : Fragment(), AnkoLogger, Callback {
 
     lateinit var app: TransferApp
     private var meal = TransferModel()
+    private var description = TransferModel()
     lateinit var loader : AlertDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,12 +47,12 @@ class HomeFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
      fun setOnClickListener( layout: View) {
          layout.enterButton.setOnClickListener { it: View? ->
              val enter =
-                 if (layout.AddName.text.isNotEmpty() || AddDescription.text.isNotEmpty() || calorieAmount.text.isNotEmpty()) {
+                 if (layout.AddName.text.isNotEmpty() || AddDescription.text.isNotEmpty() || calories.text.isNotEmpty()) {
                      meal.name = AddName.text.toString()
                      activity?.toast("You have entered a meal into the application!")
                  } else {
 
-                         if (layout.AddName.text.isEmpty() || AddDescription.text.isEmpty() || calorieAmount.text.isEmpty()) {
+                         if (layout.AddName.text.isEmpty() || AddDescription.text.isEmpty() || calories.text.isEmpty()) {
                              activity?.toast("There are some fields you have not entered")
                          } else {
                              activity?.toast("Thank you!")

@@ -7,6 +7,8 @@
     <string name="SubHeading">Add Favourite Meal</string>
     <string name="Meals">View Favourite Meals</string>
     <string name="SubmitButton">Enter</string>
+    <string name="enter_desc">Please Enter a description</string>
+    <string name="choose_img">choose an image</string>
     <string name="amount">Calories</string>
     <string name="name">Please Enter Food/Drink Name</string>
     <string name="description">Please Enter Description</string>
@@ -26,6 +28,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_view">View</string>
     <string name="menu_about">About Us</string>
+    <string name="menu_thirdoption">Open</string>
 
 
     <string name="aboutus_title">TransferHub</string>
@@ -35,4 +38,7 @@
     <string name="messageLoading">Please wait while we Connect to the Server...</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_pet_image">Choose Image</string>
+    <string name="change_meal_image">Change Image</string>
+    <string name="save_meals">Please Save</string>
 </resources>

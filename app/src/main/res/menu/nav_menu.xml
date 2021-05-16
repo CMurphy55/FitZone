@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
         android:id="@+id/home3"
         android:icon="@mipmap/view_foreground"
@@ -12,7 +13,7 @@
     <item
         android:id="@+id/nav_favourites"
         android:icon="@mipmap/nav_foreground"
-        android:title="@string/menu_favourites" />
+        android:title="@string/menu_thirdoption" />
     <item
         android:id="@+id/aboutUsFragment"
         android:icon="@mipmap/page"
