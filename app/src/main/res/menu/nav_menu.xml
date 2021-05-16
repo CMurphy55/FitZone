@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home3"
+        android:icon="@mipmap/view_foreground"
+        android:title="@string/title_activity_home" />
+    <item
+        android:id="@+id/reportFragment"
+        android:icon="@mipmap/home_foreground"
+        android:title="@string/menu_view" />
+    <item
+        android:id="@+id/nav_favourites"
+        android:icon="@mipmap/nav_foreground"
+        android:title="@string/menu_favourites" />
+    <item
+        android:id="@+id/aboutUsFragment"
+        android:icon="@mipmap/page"
+        android:title="@string/menu_about" />
+</menu>

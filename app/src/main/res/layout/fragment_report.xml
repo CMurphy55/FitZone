@@ -15,16 +15,17 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85">
+        app:layout_constraintVertical_bias="0.518">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="399dp"
-            android:layout_height="601dp"
+            android:layout_height="641dp"
             android:layout_marginTop="116dp"
+            android:background="@color/colorButton"
+            android:fontFamily="@font/bangers"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,15 +35,16 @@
 
     <TextView
         android:id="@+id/reportTitle"
-        android:layout_width="240dp"
-        android:layout_height="100dp"
-        android:text="@string/action_report"
-        android:textColor="#ff698f"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/bangers"
+        android:text="@string/Meals"
+        android:textColor="@color/colorText"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/swiperefresh"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintVertical_bias="0.642" />
 </androidx.constraintlayout.widget.ConstraintLayout>

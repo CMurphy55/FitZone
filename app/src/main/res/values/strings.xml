@@ -1,33 +1,30 @@
 <resources>
-    <string name="app_name">Transfer</string>
+    <string name="app_name">FitZone</string>
     <string name="action_donate">Transfer</string>
     <string name="action_report">Report</string>
-    <string name="donateTitle">FitZone</string>
+    <string name="Title">FitZone</string>
+    <string name="button_addImage"> Add Image </string>
     <string name="SubHeading">Add Favourite Meal</string>
+    <string name="Meals">View Favourite Meals</string>
     <string name="SubmitButton">Enter</string>
-    <string name="paypal">Bank Account</string>
-    <string name="direct">Savings Account</string>
     <string name="amount">Calories</string>
     <string name="name">Please Enter Food/Drink Name</string>
+    <string name="description">Please Enter Description</string>
     <string name="date">Show Dialog</string>
+    <string name="desc">Creamy chicken and vegetable stir fry</string>
     <string name="total">Total so Far</string>
     <string name="totalSoFar"></string>
     <string name="reportTitle">Transfer Report</string>
-    <string name="defaultAmount">00</string>
-    <string name="defaultMethod">N/A</string>
     <string name="enter_amount">Enter Calories</string>
 
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open Menu</string>
     <string name="navigation_drawer_close">Close Menu</string>
-    <string name="nav_header_title">Transfer</string>
-    <string name="nav_header_subtitle">contact@transferhub.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_donate">Transfer</string>
-    <string name="menu_report">Report</string>
-    <string name="menu_favourites">Recent Transfers</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_view">View</string>
     <string name="menu_about">About Us</string>
 
 
@@ -36,4 +33,6 @@
     our customer service are here to assist you 24/7.</string>
 
     <string name="messageLoading">Please wait while we Connect to the Server...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

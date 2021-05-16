@@ -3,5 +3,8 @@
     <color name="colorPrimary">#d68fff</color>
     <color name="colorPrimaryDark">	#7686ff</color>
     <color name="colorAccent">#9a8aff</color>
+    <color name="colorButton">#393e46</color>
+    <color name="colorButton2">#eeeeee</color>
+    <color name="colorText">#00adb5</color>
     <color name="ic_launcher_homer_background">	#ff698f</color>
 </resources>

@@ -54,7 +54,7 @@ class ReportFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val adapter = root.recyclerView.adapter as TransferAdapter
                 adapter.removeAt(viewHolder.adapterPosition)
-                deleteDonation(viewHolder.itemView.tag as String)
+                deleteMeal(viewHolder.itemView.tag as String)
             }
         }
         val itemTouchDeleteHelper = ItemTouchHelper(swipeDeleteHandler)
@@ -75,7 +75,7 @@ class ReportFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
         root.swiperefresh.setOnRefreshListener(object : SwipeRefreshLayout.OnRefreshListener {
             override fun onRefresh() {
                 root.swiperefresh.isRefreshing = true
-                getAllDonations()
+                getAllMeals()
             }
         })
     }
@@ -103,14 +103,14 @@ class ReportFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
         hideLoader(loader)
     }
 
-    fun getAllDonations() {
-        showLoader(loader, "Downloading the Donations List")
+    fun getAllMeals() {
+        showLoader(loader, "Downloading the Meals List")
         var callGetAll = app.donationService.getall()
         callGetAll.enqueue(this)
     }
 
-    fun deleteDonation(id: String) {
-        showLoader(loader, "Deleting Donation $id")
+    fun deleteMeal(id: String) {
+        showLoader(loader, "Deleting Meal $id")
         var callDelete = app.donationService.delete(id)
         callDelete.enqueue(object : Callback<TransferWrapper> {
             override fun onFailure(call: Call<TransferWrapper>, t: Throwable) {
@@ -123,7 +123,7 @@ class ReportFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
                 call: Call<TransferWrapper>,
                 response: Response<TransferWrapper>
             ) {
-                //app.donations.remove(app.donations.find { p -> p._id == id })
+                //app.meals.remove(app.meals.find { p -> p._id == id })
                 //root.recyclerView.adapter?.notifyDataSetChanged()
                 hideLoader(loader)
             }
@@ -132,6 +132,7 @@ class ReportFragment : Fragment(), AnkoLogger, Callback<List<TransferModel>> {
 
     override fun onResume() {
         super.onResume()
-        getAllDonations()
+        getAllMeals()
     }
 }
+
